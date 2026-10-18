@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "api/analytics.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/analytics",
+            "dest": "/api/analytics.js"
+        },
+        {
+            "src": "/api/analytics",
+            "dest": "/api/analytics.js"
+        }
+    ]
+}
